@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - find_trains
+  - bot_challenge
+
+
+responses:
+  utter_greet:
+  - text: "Hey! Which transport details do you want?"
+
+  utter_finding_the_details:
+  - text: "Finding the details for you..."
+  utter_was_that_helpful:
+  - text: "Was that helpful?"
+
+  utter_goodbye:
+  - text: "Goodbye! Have a great day!"
+
+  utter_thankyou:
+  - text: "Thank you for using me!"
+
+  utter_iamabot:
+  - text: "I am a bot, made by team RAY AI."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
